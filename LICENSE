@@ -4,7 +4,7 @@ Copyright © 2026 WoW64 Project. All rights reserved.
 
 ## 1. Scope
 
-This license applies only to original materials made available in this repository by the repository copyright holder, including, where applicable:
+This license applies only to original materials made publicly available in this repository by the copyright holder, including, where applicable:
 
 - Documentation
 - Technical descriptions
@@ -13,6 +13,8 @@ This license applies only to original materials made available in this repositor
 - Original project-related text
 - Other original materials explicitly identified as part of this repository
 
+This license applies only to materials actually made available in this public repository.
+
 ## 2. Permitted Use
 
 You may:
@@ -20,30 +22,39 @@ You may:
 - Read and access the materials;
 - Create links to this repository;
 - Quote reasonable portions of the documentation for commentary, research, educational, or informational purposes;
-- Reference the project in articles, discussions, research, and other informational materials;
-- Create modified versions of documentation for personal or internal reference, provided that such modified versions are not represented as official WoW64 documentation.
+- Reference the WoW64 Project in articles, discussions, research, reviews, and other informational materials;
+- Create modified versions of individual documentation materials for personal or internal reference, provided that such modified versions are not represented as official WoW64 documentation.
+
+Permitted use does not grant ownership of the materials or any rights beyond those expressly stated in this license.
 
 ## 3. Restrictions
 
 Without prior written permission from the copyright holder, you may not:
 
-- Redistribute this repository or substantial portions of its original contents as a separate commercial product;
+- Redistribute this repository or substantial portions of its original contents as a separate product or collection;
 - Sell, sublicense, or commercially redistribute the original documentation or other original repository materials as a standalone product;
-- Represent modified or derivative documentation as the official documentation of the WoW64 Project;
-- Use the WoW64 name, project identity, or logo in a manner that implies official affiliation, endorsement, or authorization;
-- Use repository materials to misrepresent another project as the WoW64 Project.
+- Create or commercially distribute derivative documentation or other derivative materials substantially based on the original repository materials;
+- Create a mirror, archive, package, or substantially complete copy of this repository for redistribution, except where such copying is otherwise required by applicable law;
+- Represent modified or derivative documentation as official WoW64 documentation;
+- Use the WoW64 name, project identity, or logo in a manner that implies official affiliation, endorsement, sponsorship, or authorization;
+- Use repository materials to misrepresent another project, product, service, or organization as the WoW64 Project;
+- Remove or alter copyright, ownership, attribution, or license notices from redistributed permitted excerpts.
+
+Nothing in this section prohibits ordinary GitHub functionality provided by GitHub itself, including viewing, forking, cloning, or other functionality made available by the platform, subject to GitHub's own terms and applicable law. A fork or clone does not grant additional rights to commercially redistribute the original materials.
 
 ## 4. No Source Code License
 
 This repository does not grant any license to source code that is not publicly distributed in this repository.
 
-Private development source code, internal tools, research databases, reverse-engineering data, and private development materials remain outside the scope of this license.
+Private WoW64 development source code, internal tools, research databases, reverse-engineering data, recovered implementation details, internal mappings, private reports, development scripts, build infrastructure, and other private development materials remain outside the scope of this license.
+
+The publication of documentation describing a concept, architecture, feature, or development status does not grant any right to reproduce or implement private source code or private implementation details.
 
 ## 5. Third-Party Materials
 
 This license does not grant rights to third-party intellectual property.
 
-In particular, references to World of Warcraft, Blizzard Entertainment, game data, game assets, trademarks, or other third-party materials do not transfer or grant ownership or licensing rights to such materials.
+In particular, references to World of Warcraft, Blizzard Entertainment, game data, game assets, trademarks, logos, models, textures, sounds, or other third-party materials do not transfer or grant ownership or licensing rights to such materials.
 
 Any third-party material remains subject to the rights and licenses of its respective owners.
 
@@ -53,20 +64,32 @@ Nothing in this license grants permission to use any third-party trademark.
 
 World of Warcraft, Blizzard Entertainment, and related names, marks, logos, and other intellectual property remain the property of their respective owners.
 
+Nothing in this license should be interpreted as granting permission to use third-party trademarks in a manner that suggests affiliation, sponsorship, endorsement, or authorization.
+
 ## 7. No Warranty
 
 The materials are provided for informational and research purposes without warranties of any kind, to the maximum extent permitted by applicable law.
 
-The copyright holder makes no guarantee regarding completeness, accuracy, compatibility, or fitness for a particular purpose.
+The copyright holder makes no guarantee regarding completeness, accuracy, compatibility, availability, security, or fitness for a particular purpose.
 
 ## 8. Independent Project
 
 The WoW64 Project is an independent research and development project.
 
-It is not affiliated with, sponsored by, or endorsed by Blizzard Entertainment.
+It is not affiliated with, sponsored by, authorized by, or endorsed by Blizzard Entertainment.
+
+References to World of Warcraft or other third-party technologies are made solely for identification and compatibility-context purposes unless explicitly stated otherwise.
 
 ## 9. Reservation of Rights
 
 All rights not expressly granted by this license are reserved by the copyright holder.
 
+Nothing in this license grants any implied license, ownership interest, patent license, trademark license, source-code license, or other intellectual property right except as expressly stated.
+
 For permissions not covered by this license, contact the repository copyright holder.
+
+## 10. No Transfer of Private Materials
+
+Nothing in this public repository or this license grants access to, ownership of, or rights in any private WoW64 development materials.
+
+Private research, development history, internal source code, reverse-engineering databases, proprietary implementation information, internal tools, and unpublished technical materials remain the exclusive property of their respective rights holders and are not licensed or transferred by publication of this repository.
