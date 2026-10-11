@@ -39,7 +39,24 @@ Read the development log:
 
 The authoritative reverse-engineering database is:
 
-`D:\Workspace\WoW64\docs\re\database\functions.sqlite`
+`D:\Workspace\WoW64\docs\re\database\WotLK_base.sqlite`
+
+`WotLK_base` is a permanent name, not a version label. This database is the ONLY
+authoritative RE database:
+
+- It MUST be updated in place; all future RE work adds to, corrects, and enriches this
+  single file.
+- Creating a new database file that supersedes `WotLK_base.sqlite` is forbidden, and no
+  `baseline.vNN` generation mechanism may be used to mint one.
+- It MUST NOT be renamed.
+- No parallel, sibling, "commercial", "consolidated", or "merged" database may be kept
+  as a second source of truth.
+- An in-place update MUST NOT lose any previously present `functions`, `evidence`, or
+  `evidence_v2` row, and MUST leave `PRAGMA integrity_check` = `ok`.
+
+This mirrors the single rule defined in `D:\Workspace\Project Rules.txt` §1.2,
+`AGENTS.md` §30R, and `TASK_PROTOCOL.md` §29A. Where this skill and those documents
+appear to disagree on database identity, they prevail.
 
 Use only `D:\Workspace\WoW64` for project operations. Do not switch to clones, virtual machines, temporary workspaces, stale copies, or alternate project trees.
 
@@ -57,6 +74,21 @@ Treat the sources according to their distinct roles:
 No single source automatically proves everything. The log records what happened; it does not guarantee that an old statement still describes the current source code, database, or runtime behavior.
 
 Never modify `Project Rules.txt` unless the user explicitly authorizes the specific modification. Do not silently rewrite or replace it.
+
+### 2.1 Authority and priority
+
+This skill is a specialized aid. It is subordinate to the project rules and operating
+constraints. On conflict, follow this order:
+
+1. explicit safety / system requirements;
+2. direct user instructions for the current task;
+3. `D:\Workspace\Project Rules.txt` (principal permanent project rules);
+4. `AGENTS.md` (mandatory agent operating rules);
+5. `TASK_PROTOCOL.md` (operating protocol);
+6. this skill.
+
+`DEVLogs.txt` and report artifacts record history and results; they do not establish
+normative rules.
 
 ## 3. Mandatory context-recovery procedure
 
@@ -126,6 +158,14 @@ Do not turn every task into a new audit report.
 ## 4. Evidence and knowledge classification
 
 Keep the following categories distinct in reasoning, implementation decisions, and logging.
+
+These categories track the lifecycle of a research conclusion across sessions. They are
+complementary to, not a replacement for, the evidence-provenance categories of
+`AGENTS.md` §3 / `TASK_PROTOCOL.md` §3 (ORIGINAL_RE, RUNTIME_CONFIRMED,
+CONTRACT_CONFIRMED, UNIT_TEST_CONFIRMED, THIRD_PARTY_CONFIRMED, INFERRED, UNKNOWN).
+The normative mapping is `AGENTS.md` §3A. In particular, a *previously confirmed* or
+*carried-over* finding is NOT thereby newly confirmed and MUST NOT justify a
+`functions.status` transition until revalidated.
 
 ### 4.1 Confirmed finding
 
